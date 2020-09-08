@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Igor Fendrikh](https://up.htmlacademy.ru/htmlcss/29/user/1552321).
-* Наставник: [Алина Шаймиева](https://htmlacademy.ru/profile/id74223).
+* Наставник: [Алина🦉Шаймиева](https://htmlacademy.ru/profile/id74223).
 
 ---
 
