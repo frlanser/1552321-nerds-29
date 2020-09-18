@@ -1,0 +1,122 @@
+:root {
+  --basic-gray: #EEEEEE;
+  --basic-red: #FB565A;
+  --basic-black: #000000;
+  --basic-dark: #283136;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --basic-extra-dark: #888888;
+  --basic-gray-lighten: #666666;
+  --basic-extra-gray: #444444;
+  --basic-background-gray: #FFFFFF;
+  --basket-gray:#A6A6A6;
+  --basic-white: #ffffff;
+
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  }
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%
+  height:auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-red);
+}
+
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.index-columns {
+  color: var(--basic-black);
+   background-color: var(--basic-white);
+   background-image: url("img/nerds-illustration.png");
+   background-position: center, 0 0;
+   background-repeat: no-repeat, repeat;
+
+ }
+
+ .index-columns h2 {
+   font-size: 45px;
+   line-height: 64px;
+   font-weight: 700;
+   list-style: none;
+   margin: 0;
+ }
+
+ .index-columns p {
+   font-size: 16px;
+   line-height: 18px;
+   font-weight: 400;
+   list-style: none;
+ }
+
+.index-columns h3 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.index-columns li {
+  list-style: none;
+}
+
+.info h4 {
+font-size: 16px;
+line-height: 24px;
+weight: 700;
+text-transform: uppercase;
+}
