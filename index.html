@@ -31,12 +31,10 @@
 </header>
 <main class="center">
 <h1>Долго, дорого, скрупулезно.</h1>
-<P>Математически выверенный дизайн для вашего сайте или мобильного приложения.</p>
+<p class="main-p">Математически выверенный дизайн для вашего сайте или мобильного приложения.</p>
 <a class="main-button" href="blank.html">Узнать больше</a>
-</nav>
 <section class="features">
-  <h2>Услуги</h2>
-<ul class="features-list">
+  <ul class="features-list">
   <li class="features-item">
     <img src="img/illust1.jpg" width="300" height="146" alt="Картинка веб-сайты">
     <h3>Веб-сайты</h3>
@@ -113,30 +111,40 @@
   </section>
   <section class="footer-social">
     <h3>Давайте дружить, это выгодно!</h3>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="footer-p">Скидка 10% для друзей из социальных сетей.</p>
     <ul>
       <li>
         <a class="social-button" href="#">Вконтакте</a>
-      </li>
+        <img src="img/Shape.png" width="27" height="15" alt="Логотип вконтакте">
+        </li>
       <li>
         <a class="social-button" href="#">Фейсбук</a>
+        <im src="img/Facebook.png" width="12" height="22" alt="Логотин фэйсбук">
       </li>
       <li>
         <a class="social-button" href="#">Инстаграм</a>
+        <img src="img/Path.png" width="21" height="21" alt="Логотип инстаграм">
       </li>
     </ul>
   </section>
 </footer>
 
-<section class="modal modal-text">
+<section class="modal">
   <h2>Напишите нам</h2>
-  <p class="modal-description">Ваше имя</p>
-  <-здесь будет форма имени->
-  <p>Ваш email</p>
-  <-здесь будет форма email->
-  <p>Текст письма</p>
-  <-здесь будет форма письма->
-  <button class="modal-close" type="button"Закрыть</button>
+   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="name">Ваше имя:</label>
+      <input class="name-user" id="user-user" type="name" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label class="visually-hidden" for="login-login">Ваш email:</label>
+      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+    </p>
+    <p>
+        <label class="visually-hidden" for="text">Текст письма:</label>
+        <input class="text" id="text-user" type="text" placeholder="В свободной форме">
+      </p>
+  <button class="modal-close" type="button">Закрыть</button>
   </section>
   </body>
 </html>
