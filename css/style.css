@@ -35,6 +35,13 @@ img {
   height:auto;
 }
 
+.center h1 {
+  width: 538px;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+
+}
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -43,6 +50,10 @@ img {
 }
 
 .main-navigation-wrapper {
+  background-color: var(--basic-gray);
+}
+
+.main-header {
   background-color: var(--basic-gray);
 }
 
@@ -108,9 +119,20 @@ img {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  width: 651px;
 }
 
-.index-columns li {
+.info-item {
+  border-color: #000000;
+  border-left: 1px solid #FB565A;
+  padding-left: 10px;
+  list-style: none;
+  margin-bottom: 5px;
+  border-bottom: 1px;
+}
+
+
+.skills li {
   list-style: none;
 }
 
@@ -119,4 +141,41 @@ font-size: 16px;
 line-height: 24px;
 weight: 700;
 text-transform: uppercase;
+}
+
+.button-1 {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.button-2 {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.button-3 {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.contacts-phone {
+  color: inherit;
 }
