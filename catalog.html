@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+  <body class="page-body">
 
-
-<header>
-<nav>
-   <a>
+<header class="main-header">
+<nav class="main-navigation">
+   <a class="main-header-logo">
      <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
    </a>
-<ul>
+   <div class="main-navigation-wrapper">
+     <div class="center">
+<ul class="site-navigation">
   <li><a href="blank.html">Студия</a></li>
     <li><a href="blank.html">Клиенты</a></li>
     <li><a href="catalog.html">Магазин</a></li>
     <li><a href="blank.html">Контакты</a></li>
   </ul>
-  <a href="blank.html">Корзина</a>
+  <div class="user-navigation">
+  <a class="basket-link" href="blank.html">Корзина</a>
+</div>
+</div>
+</div>
     </nav>
-</header>
-
 <main>
   <h1>Магазин готовых шаблонов</h1>
+  </header>
   <section>
     <h2>Фильтр товаров</h2>
     <Здесь будет форма фильтра>
     </section>
     <section>
       <h2>Список готовых шаблонов</h2>
-<ul>
+      <ul>
   <li>
   <a href="sedona.html"></a>
   <h3>Sedona</h3>
   <p>
 <img src="img/sedona.jpg" width="360px" height="576px" alt="SEDONA">
   </p>
-  <p>Информационный сайт для туристов
+  <p>Информационный сайт для туристов</p>
   <button type="button">9 900</button>
-  </p>
   </li>
   <li>
     <a href="#">
@@ -83,30 +89,33 @@
     </ul>
     </section>
 </main>
-<footer>
-  <section>
-    <h3>Nёrds design studio</h3>
+<footer class="page-footer main-footer">
+<section class="footer-contacts">
+  <h3>Nёrds design studio</h3>
 <p>191186, Санкт-Петербург,
-  ул. Б. Конюшенная, д.19/8<br>
-  тел. <a href="tel:+7(812)275-75-75">+7 (812)275-75-75</a><br>
-  <a href="blank.html">Напишите нам</a>
+ул. Б. Конюшенная, д.19/8<br>
+тел. <a class="contacts-phone" href="tel:+7(812)275-75-75">+7 (812)275-75-75</a><br>
+  <a class="footer-button" href="blank.html">Напишите нам</a>
 </p>
-  </section>
-  <section>
-    <h3>Давайте дружить, это выгодно!</h3>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
-    <ul>
-      <li>
-        <a href="#">Вконтакте</a>
+</section>
+<section class="footer-social">
+  <h3>Давайте дружить, это выгодно!</h3>
+  <p class="footer-p">Скидка 10% для друзей из социальных сетей.</p>
+  <ul>
+    <li>
+      <a class="social-button" href="#">Вконтакте</a>
+      <img src="img/Shape.png" width="27" height="15" alt="Логотип вконтакте">
       </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Инстаграм</a>
-      </li>
-    </ul>
-  </section>
+    <li>
+      <a class="social-button" href="#">Фейсбук</a>
+      <im src="img/Facebook.png" width="12" height="22" alt="Логотин фэйсбук">
+    </li>
+    <li>
+      <a class="social-button" href="#">Инстаграм</a>
+      <img src="img/Path.png" width="21" height="21" alt="Логотип инстаграм">
+    </li>
+  </ul>
+</section>
 </footer>
   </body>
 </html>
