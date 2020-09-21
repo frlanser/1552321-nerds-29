@@ -117,10 +117,12 @@ img {
 }
 
 .site-navigation a:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 .user-navigation a:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .main-logo img:hover,
@@ -262,14 +264,42 @@ img {
 .filter legend {
   font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
 }
 
-.filter ul {
+.filter-radio {
   list-style: none;
-  line-height: 18px;
+  line-height: 19px;
   font-size: 16px;
+  weight:400;
+  font-weight: normal;
+  color: var(--basic-dark);
+}
+.sort-price {
+  list-style: none;
+  line-height: 19px;
+  font-size: 16px;
+  weight:400;
+  font-weight: normal;
+  color: var(--basic-dark);
 }
 
+.filter-checkbox {
+  list-style: none;
+  line-height: 19px;
+  font-size: 16px;
+  weight:400;
+  font-weight: normal;
+  color: var(--basic-dark);
+  }
+
+ .filter-grid-Sort {
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: bold;
+   list-style: none;
+   weight: 700;
+ }
 .skills p {
   text-align: none;
   color: var(--basic-black);
@@ -281,6 +311,17 @@ img {
 .skills li {
   list-style: none;
   }
+.strainer {
+list-style: none;
+}
+
+.skills-item {
+font-size: 45px;
+line-height: 64px;
+weight: 700;
+font-weight: bold;
+font-style: normal;
+}
 
 .info h4 {
 font-size: 16px;
@@ -298,6 +339,8 @@ text-transform: uppercase;
   background-color: var(--basic-red);
   border-radius: 3px;
   padding: 5px;
+  outline: none;
+  border: none;
 }
 
 .button-1:hover {
@@ -308,6 +351,7 @@ text-transform: uppercase;
   background-color: var(--basic-red-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
+
 }
 
 .button-2 {
@@ -319,6 +363,8 @@ text-transform: uppercase;
   background-color: var(--basic-green);
   border-radius: 3px;
   padding: 5px;
+  outline: none;
+  border: none;
 }
 .button-2:hover {
   background-color: var(--basic-green-lighten);
@@ -327,6 +373,7 @@ text-transform: uppercase;
   background-color: var(--basic-green-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
+
 }
 .button-3 {
   font: inherit;
@@ -337,6 +384,8 @@ text-transform: uppercase;
   background-color: var(--basic-yellow);
   border-radius: 3px;
   padding: 5px;
+  outline: none;
+  border: none;
 }
 .button-3:hover {
   background-color: var(--basic-yellow-lighten);
@@ -345,7 +394,7 @@ text-transform: uppercase;
   background-color: var(--basic-yellow-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
-}
+  }
 .main-button {
   font: inherit;
   text-align: center;
@@ -357,7 +406,8 @@ text-transform: uppercase;
   width: 240px;
   height: 50px;
   border-radius: 3px;
-}
+  outline: none;
+  }
 .main-button:hover {
   background-color: var(--basic-red-lighten);
 }
@@ -366,6 +416,7 @@ text-transform: uppercase;
   background-color: var(--basic-red-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
+
 }
 
 .footer-button {
@@ -379,6 +430,7 @@ text-transform: uppercase;
   width: 240px;
   height: 50px;
   border-radius: 3px;
+  outline: none;
 }
 .footer-button:hover {
   background-color: var(--basic-red-lighten);
@@ -388,6 +440,7 @@ text-transform: uppercase;
   background-color: var(--basic-red-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
+
 }
 
 .button-buy {
@@ -401,6 +454,7 @@ text-transform: uppercase;
   border-radius: 3px;
   width: 200px;
   height: 50px;
+  outline: none;
 
 }
 .button-buy:hover {
@@ -410,6 +464,7 @@ text-transform: uppercase;
 .button-buy:active {
   background-color: var(--basic-red-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
   }
 
 .filter-button{
@@ -424,7 +479,8 @@ text-transform: uppercase;
     height: 50px;
     border-radius: 3px;
     font-weight: bold;
-    }
+    outline: none;
+      }
 .filter-button:hover {
   background-color: var(--basic-submit-gray);
 }
@@ -433,7 +489,7 @@ text-transform: uppercase;
   background-color: var(--basic-submit-gray-darken);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
-}
+  }
 
 
 .contacts-phone {
@@ -463,6 +519,7 @@ text-transform: uppercase;
 .social-button {
   color: var(--basic-white);
   background-color: var(--basic-gray);
+
 }
 
 .social-button:hover,
@@ -500,7 +557,7 @@ text-transform: uppercase;
 }
 
 
-.login-form input[type="name"],
+.login-form input[type="text"],
 .login-form input[type="email"],
 .login-form input[type="text"] {
   font: inherit;
@@ -508,8 +565,13 @@ text-transform: uppercase;
   background-color: var(--basic-white);
   border: 2px solid var(--basic-gray);
   font-weight: 400;
+
 }
 
 .login-form input:hover {
   border-color: var(--basic-modal-gray-darken);
 }
+
+.login-form input[type="email"]:required:invalid {
+  border-color: red;
+  color: red;
