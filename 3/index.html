@@ -12,7 +12,7 @@
 
 <header class="main-header">
 <nav class="main-navigation">
-   <a class="main-header-logo">
+   <a class="main-logo">
      <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
    </a>
    <div class="main-navigation-wrapper">
@@ -32,7 +32,7 @@
 <main class="center">
 <h1>Долго, дорого, скрупулезно.</h1>
 <p class="main-p">Математически выверенный дизайн для вашего сайте или мобильного приложения.</p>
-<a class="main-button" href="blank.html">Узнать больше</a>
+<button class="main-button" type="button">Узнать больше</button>
 </header>
 <section class="features">
   <ul class="features-list">
@@ -107,7 +107,7 @@
 <p>191186, Санкт-Петербург,
   ул. Б. Конюшенная, д.19/8<br>
   тел. <a class="contacts-phone" href="tel:+7(812)275-75-75">+7 (812)275-75-75</a><br>
-    <a class="footer-button" href="blank.html">Напишите нам</a>
+    <button class="main-button" type="button">Напишите нам</button>
 </p>
   </section>
   <section class="footer-social">
@@ -135,16 +135,18 @@
    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="visually-hidden" for="name">Ваше имя:</label>
-      <input class="name-user" id="user-user" type="name" name="name" placeholder="Имя Фамилия">
+      <input class="name-user" id="user-user" type="name" name="name" placeholder="Имя Фамилия" required>
     </p>
     <p>
       <label class="visually-hidden" for="login-login">Ваш email:</label>
-      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com" required>
     </p>
     <p>
-        <label class="visually-hidden" for="text">Текст письма:</label>
-        <input class="text" id="text-user" type="text" placeholder="В свободной форме">
+        <label class="text" for="text">Текст письма:</label>
+        <input class="text" id="text" name="text" type="text" placeholder="В свободной форме"></input>
       </p>
+      <input type="submit" value="Отправить">
+    </form>
   <button class="modal-close" type="button">Закрыть</button>
   </section>
   </body>
