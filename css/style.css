@@ -27,7 +27,7 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1157px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -40,7 +40,6 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
 
 .page a {
   text-decoration: none;
@@ -56,7 +55,7 @@ color: var(--basic-dark);
 }
 
 img {
-  max-width: 100%
+  max-width: 100%;
   height:auto;
 }
 
@@ -89,7 +88,7 @@ img {
   font-size: 55px;
   line-height: 55px;
   weight: 500;
-}
+  }
 
 .site-navigation li {
   list-style: none;
@@ -135,7 +134,23 @@ img {
   opacity: 0.2;
 }
 
-
+.partners-item {
+  list-style: none;
+  opacity: 0.2;
+}
+.partners-item:hover {
+  opacity: 1;
+}
+.info h3{
+  border-top: 2px solid var(--basic-gray);
+}
+.partners {
+  border-top: 2px solid var(--basic-gray);
+  border-bottom: 2px solid var(--basic-gray);
+}
+.partners-item:active {
+  opacity: 0.1;
+}
 .features-list {
   list-style: none;
   color: var(--basic-black);
@@ -149,16 +164,13 @@ img {
   list-style: none;
   font-size: 16px;
   line-height: 24px;
-  float: left;
   padding-right: 50px;
-  text-align: left;
-
-
-}
+    }
 
 .features-item h3 {
   font-size: 24px;
   line-height: 30px;
+
 
 }
 
@@ -169,6 +181,8 @@ img {
    background-position: center, 0 0;
    background-repeat: no-repeat, repeat;
 
+
+
  }
 
  .index-columns h2 {
@@ -177,7 +191,7 @@ img {
    font-weight: 700;
    list-style: none;
    margin: 0;
- }
+    }
 
  .index-columns p {
    font-size: 16px;
@@ -185,6 +199,7 @@ img {
    font-weight: 400;
    list-style: none;
    color: var(--basic-dark);
+
  }
 
 .index-columns h3 {
@@ -192,6 +207,7 @@ img {
   line-height: 45px;
   font-weight: 500;
   width: 651px;
+
 }
 
 .info-item {
@@ -303,6 +319,7 @@ img {
 .skills p {
   text-align: none;
   color: var(--basic-black);
+
 }
 .skills {
   text-align: none;
@@ -520,6 +537,7 @@ text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-gray);
 
+
 }
 
 .social-button:hover,
@@ -559,7 +577,7 @@ text-transform: uppercase;
 
 .login-form input[type="text"],
 .login-form input[type="email"],
-.login-form input[type="text"] {
+.login-form textarea[class="text"] {
   font: inherit;
   color: var(--basic-black);
   background-color: var(--basic-white);
