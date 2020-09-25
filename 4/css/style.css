@@ -515,7 +515,7 @@ text-transform: uppercase;
 
 .footer-social {
   text-align: left;
-}
+  }
 
 .footer-social ul {
   list-style: none;
@@ -534,8 +534,12 @@ text-transform: uppercase;
 }
 
 .social-button {
-  color: var(--basic-white);
+  color: var(--basic-gray);
   background-color: var(--basic-gray);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  display: block;
 
 
 }
