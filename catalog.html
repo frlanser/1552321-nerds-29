@@ -7,49 +7,43 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     </head>
-  <body class="page-body inner-page">
- <header class="main-header1">
+      <body class="page-body">
+ <header class="main-header">
 <nav class="main-navigation">
+  <div class="center">
    <a class="main-logo">
      <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии «Нёрдс»">
    </a>
    <div class="main-header-bar">
    <div class="main-navigation-wrapper">
-     <div class="center">
-<ul class="site-navigation">
+     <ul class="site-navigation">
   <li><a href="blank.html">Студия</a></li>
     <li><a href="blank.html">Клиенты</a></li>
     <li><a href="catalog.html">Магазин</a></li>
     <li><a href="blank.html">Контакты</a></li>
   </ul>
   <div class="user-navigation">
-    <img src="img/cart-icon.svg" alt="Корзина">
-  <a class="basket-link" href="blank.html">Корзина</a>
-    <h1 class="header-h1-catalog">Магазин готовых шаблонов</h1>
+      <a class="login-link" href="login.html">Корзина</a>
 </div>
 </div>
 </div>
 </div>
-  </nav>
+<div class="catalog">
+  <h1 class="header-h1-catalog">Магазин готовых шаблонов</h1>
+</div>
+    </nav>
     </header>
-    <main class="page-catalog">
-  <section  class="Sort">
-    <ul>
-    <li class="filter-grid-Sort">
-    Стоимость:
-  </li>
-    <li class="strainer">
-    От 0 <input type="range" id="price-scount" name="prices-count" min="1" max="15000" step="1" value="10000"> До 15000
-  </li>
-    <li class="filter-grid-Sort">
-      Сортировать:
-    </li>
-    <li class="sort-price">По цене</li>
-    <li class="sort-price">По типу</li>
-    <li class="sort-price">По названию</li>
-      </ul>
-      </section>
-    <section class="filters">
+        <main class="page-catalog">
+  <section class="filter">
+  <ul class="breadcrumbs">
+        <li class="breadcrumbs">Стоимость</li>
+          От 0 <input type="range" id="price-scount" name="prices-count" min="1" max="15000" step="1" value="10000"> До 15000
+          <li class="breadcrumbs">Сортировать</li>
+          <li class="sort-сurrent">По цене</li>
+        <li class="sort-price">По типу</li>
+        <li class="sort-price">По названию</li>
+            </ul>
+                <ul>
        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>Сетка:</legend>
@@ -94,8 +88,9 @@
         </ul>
         </form>
       </fieldset>
-    </section>
-      <button type="submit" class="filter-button">Показать</button>
+        <button type="submit" class="filter-button">Показать</button>
+        </section>
+        <section>
           <h2>Список готовых шаблонов</h2>
       <ul class="catalog-list">
   <li class="catalog-item">
