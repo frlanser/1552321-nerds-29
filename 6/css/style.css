@@ -115,24 +115,17 @@ body {
   background-color: var(--basic-gray);
 }
 
-.main-header h1 {
-  font-size: 55px;
-  line-height: 55px;
-  weight: 500;
-  width: 537px;
-}
-
-.main-header1 {
-  margin-bottom: 108px;
-  background-color: var(--basic-gray);
-}
-
-.main-header1 h1 {
-  width: 745px;
-  height: 55px;
-  line-height: 55px;
+.catalog h1 {
   font-size: 55px;
   font-weight: 500;
+  padding-top: 67px;
+  text-align: center;
+  margin-bottom: 108px;
+}
+
+.main-header {
+  margin-bottom: 108px;
+  background-color: var(--basic-gray);
 }
 
 .site-navigation {
@@ -321,6 +314,8 @@ body {
 }
 
 .sort {
+  display: flex;
+  flex-wrap: wrap;
   width: 260px;
 }
 
