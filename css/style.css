@@ -135,20 +135,21 @@ body {
   font-weight: 500;
 }
 
-.site-navigation li {
-  display: inline;
-  position: relative;
-  margin-top: 75px;
-  margin: 45px;
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   font-size: 16px;
   line-height: 30px;
-  width: 437px;
   height: 30px;
   list-style: none;
   text-transform: uppercase;
-  weight: 500;
+  weight: 400;
   font-weight: bolder;
+  position: relative;
+  top: auto;
+  left: 102px;
 }
 
 .site-navigation-current a:not([href]) {
@@ -158,6 +159,8 @@ body {
 .site-navigation a,
 .user-navigation a {
   color: var(--basic-black);
+  display: block;
+  padding: 1px 45px;
 }
 
 .site-navigation a:hover,
@@ -167,16 +170,29 @@ body {
   color: var(--basic-red);
 }
 
+.login-link::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  background-image: url("img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation .login-link {
+  padding-left: 50px;
+  position: relative;
+  text-align: right;
+  top: 17px;
+}
+
 .site-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
 .user-navigation {
-  position: relative;
-  top: -46px;
-  text-align: right;
-  margin-left: 285px;
   text-transform: uppercase;
   weight: 500;
   font-weight: bolder;
@@ -185,6 +201,11 @@ body {
 .user-navigation a:active {
   color: var(--basic-black);
   opacity: 0.3;
+}
+
+.main-logo {
+  position: relative;
+  top: 49px;
 }
 
 .main-logo img:hover,
@@ -292,12 +313,11 @@ body {
 
 .info-item {
   display: block;
-  width: 399px;
-  height: 120px;
   font-size: 16px;
   line-height: 24px;
   list-style: none;
   color: var(--basic-dark);
+  margin-top: 46px;
 }
 
 .sort {
@@ -454,12 +474,26 @@ body {
   list-style: none;
 }
 
+.skills23 {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  right: 30px;
+}
+
+.old {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
 .skills-item {
   font-size: 45px;
   line-height: 64px;
   weight: 700;
-  fon-weight: bold;
+  font-weight: bold;
   font-style: normal;
+  padding: 5px 5px;
 }
 
 .info h4 {
