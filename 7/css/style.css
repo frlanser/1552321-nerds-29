@@ -180,11 +180,14 @@ body {
 .login-link::before {
   content: "";
   position: absolute;
+  top: 27px;
+  left: 24px;
   width: 16px;
   height: 18px;
   background-image: url("img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: white;
 }
 
 .user-navigation .login-link {
