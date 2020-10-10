@@ -23,6 +23,9 @@
   --basic-red-darken: #d7373b;
   --basic-gray-pagination: #dbdbdb;
   --basic-gray-prices: #4d4d4d;
+  --scale-controls: #f1f1f1;
+  --range-toggle: #ababab;
+  --range-toggle-shadow: #cfcfcf;
   --special: #fb565a;
 }
 
@@ -180,14 +183,13 @@ body {
 .login-link::before {
   content: "";
   position: absolute;
-  top: 27px;
+  top: 8px;
   left: 24px;
   width: 16px;
   height: 18px;
   background-image: url("img/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: white;
 }
 
 .user-navigation .login-link {
@@ -239,6 +241,7 @@ body {
 .partners-item {
   list-style: none;
   opacity: 0.2;
+  margin-right: 100px;
 }
 
 .partners-item:hover {
@@ -365,6 +368,96 @@ body {
   padding-left: 45px;
 }
 
+/* Filter scale */
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 260px;
+  margin-bottom: 50px;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--scale-controls);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-modal-gray);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-background-gray);
+  background-color: var(--range-toggle);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--range-toggle-shadow);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--basic-dark);
+  border: none;
+  border-radius: 5px;
+  background: var(--scale-controls);
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .old {
   color: black;
 }
@@ -400,12 +493,27 @@ body {
   color: var(--basic-black);
 }
 
-.pagination-list li {
+/* pagination */
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
-  width: 50px;
+}
+
+.pagination-item {
+  margin-right: 11px;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
 }
 
 .pagination-item a {
+  display: block;
+  padding: 10px 19px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
 }
@@ -415,6 +523,7 @@ body {
 }
 
 .pagination-item a:active {
+  display: block;
   background-color: var(--basic-submit-gray-darken);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.3);
@@ -427,6 +536,8 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
   border: 3px solid var(--basic-gray-pagination);
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .filter legend {
@@ -463,6 +574,8 @@ body {
 
 .breadcrumbs-sort {
   position: relative;
+  line-height: 30px;
+  font-size: 18px;
   margin-right: 266px;
   text-transform: uppercase;
   font-weight: bold;
@@ -737,8 +850,8 @@ body {
   position: absolute;
   left: -40px;
   top: 0;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   border: 2px solid var(--basic-gray-prices);
   border-radius: 10%;
   opacity: 0.4;
@@ -747,11 +860,12 @@ body {
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 2px;
   left: -33px;
-  width: 12px;
-  height: 12px;
-  background-color: url("img/tick.svg");
+  width: 21px;
+  height: 17px;
+  background-color: white;
+  background-image: url("img/tick.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -841,6 +955,7 @@ body {
 }
 
 .modal {
+  display: none;
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: 0 0;
@@ -850,7 +965,6 @@ body {
 }
 
 .login-form input[type="submit"] {
-  display: inline-block;
   width: auto;
   color: var(--basic-white);
   background-color: var(--basic-red);
