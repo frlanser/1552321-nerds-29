@@ -30,7 +30,7 @@
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -248,10 +248,6 @@ body {
   opacity: 1;
 }
 
-.info h3 {
-  border-top: 2px solid var(--basic-gray);
-}
-
 .partners {
   border-top: 2px solid var(--basic-gray);
   border-bottom: 2px solid var(--basic-gray);
@@ -300,6 +296,7 @@ body {
   background-image: url("img/nerds-illustration.png");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
+  border-top: 2px solid var(--basic-gray);
 }
 
 .index-columns h2 {
@@ -315,13 +312,19 @@ body {
   font-weight: 400;
   list-style: none;
   color: var(--basic-dark);
+  margin-bottom: 40px;
 }
 
 .index-columns h3 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  width: 651px;
+  margin-bottom: 32px;
+}
+
+.info h3 {
+  width: 1158px;
+  margin-top: 73px;
 }
 
 .info-item {
@@ -330,7 +333,15 @@ body {
   line-height: 24px;
   list-style: none;
   color: var(--basic-dark);
-  margin-top: 46px;
+  margin-bottom: 46px;
+}
+
+.info-list img {
+  position: relative;
+  margin-right: 7px;
+  bottom: 5px;
+  height: 2px;
+  width: 25px;
 }
 
 .sort {
@@ -615,8 +626,14 @@ body {
 }
 
 .skills p {
+  margin-top: 37px;
   text-align: none;
   color: var(--basic-black);
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .skills {
@@ -638,10 +655,8 @@ body {
   right: 30px;
 }
 
-.old {
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
+.skills img {
+  margin-top: 39px;
 }
 
 .skills-item {
@@ -894,10 +909,27 @@ body {
   opacity: 0.4;
 }
 
+.map {
+  width: 1440px;
+  height: 416px;
+  margin-top: 80px;
+  margin-bottom: 1px;
+}
+
 .footer-contacts {
+  padding-top: 49px;
+  position: relative;
+  bottom: 380px;
+  left: 150px;
   display: block;
   margin: 0;
   width: 319px;
+  height: 308px;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
+.footer-contacts h3 {
 }
 
 .contacts-phone {
@@ -911,6 +943,28 @@ body {
 
 .footer-social {
   text-align: left;
+}
+
+.vk img {
+  position: relative;
+  bottom: 55px;
+  left: 28px;
+}
+
+.Facebook img {
+  position: relative;
+  bottom: 55px;
+  left: 33px;
+}
+
+.Insta img {
+  position: relative;
+  bottom: 53px;
+  left: 31px;
+}
+
+.footer-social {
+  margin-top: 5px;
 }
 
 .footer-social ul {
