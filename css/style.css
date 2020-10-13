@@ -917,6 +917,7 @@ body {
 }
 
 .footer-contacts {
+  padding-top: 49px;
   position: relative;
   bottom: 380px;
   left: 150px;
