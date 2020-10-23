@@ -634,7 +634,7 @@ body {
   background-color: #eee;
   position: absolute;
   bottom: -226px;
-  }
+}
 
 .catalog-item-third .description {
   width: 358px;
@@ -644,9 +644,9 @@ body {
   background-color: #eee;
   position: absolute;
   bottom: -800px;
-  }
-  
-  .catalog-item-fourth .description {
+}
+
+.catalog-item-fourth .description {
   width: 358px;
   height: 220px;
   text-align: center;
@@ -654,9 +654,9 @@ body {
   background-color: #eee;
   position: absolute;
   bottom: -800px;
-  }
-  
-  .catalog-item-fifth .description {
+}
+
+.catalog-item-fifth .description {
   width: 358px;
   height: 220px;
   text-align: center;
@@ -664,9 +664,9 @@ body {
   background-color: #eee;
   position: absolute;
   bottom: -1500px;
-  }
-  
-  .catalog-item-sixth .description {
+}
+
+.catalog-item-sixth .description {
   width: 358px;
   height: 220px;
   text-align: center;
@@ -674,8 +674,8 @@ body {
   background-color: #eee;
   position: absolute;
   bottom: -1500px;
-  }
-  
+}
+
 .description-text {
   width: 355px;
   height: 37px;
@@ -1017,15 +1017,50 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -50px;
+  left: -45px;
   width: 2px;
   height: 52px;
   margin: auto;
   background-color: var(--basic-gray);
+  bottom: 10px;
 }
 
 .partners-item:first-child::after {
   display: none;
+}
+
+.Academy {
+  position: relative;
+  top: 4px;
+  left: 10px;
+  padding-left: 10px;
+  padding-right: 35px;
+  margin-right: 50px;
+}
+
+.Barbershop {
+  position: relative;
+  right: 8px;
+  bottom: 3px;
+  padding-left: 2px;
+  padding-right: 24px;
+  margin-right: 46px;
+}
+
+.Pink {
+  position: relative;
+  right: 17px;
+  bottom: 3px;
+  padding-left: 15px;
+  padding-right: 1px;
+}
+
+.Mishka {
+  position: relative;
+  left: 27px;
+  top: 1px;
+  padding-left: 20px;
+  padding-right: 24px;;
 }
 
 .button-1 {
