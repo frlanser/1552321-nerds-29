@@ -66,6 +66,7 @@ body {
 }
 
 .page-body {
+  width: 100%;
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -79,7 +80,9 @@ body {
   display: grid;
   grid-template-columns: 220px 1fr;
   grid-column-gap: 140px;
-  margin-left: 130px;
+  margin-left: 343px;
+  justify-content: center;
+  align-self: center;
 }
 
 .inner-page .main-navigation-wrapper {
@@ -111,6 +114,7 @@ body {
   width: 1200px;
   margin-left: 130px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -119,6 +123,8 @@ body {
   color: var(--basic-black);
   background-color: transparent;
   weight: 500;
+  justify-content: center;
+  align-self: center;
 }
 
 .inner-page .main-navigation {
@@ -135,22 +141,27 @@ body {
 }
 
 .main-header {
-  width: 1440px;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
   margin-bottom: 108px;
   background-color: var(--basic-gray);
 }
 
 .catalog-header {
-  width: 1440px;
+  width: 100%;
   margin-bottom: 58px;
   background-color: var(--basic-gray);
+  justify-content: center;
+  align-self: center;
 }
 
 .catalog h1 {
   font-size: 55px;
   font-weight: 500;
   padding-top: 29px;
-  text-align: center;
+  position: relative;
+  left: 569px;
   margin-bottom: 121px;
   padding-bottom: 0;
   background-color: var(--basic-gray);
@@ -165,6 +176,7 @@ body {
   height: 30px;
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
   justify-content: center;
   padding: 0;
   font-size: 16px;
@@ -372,13 +384,23 @@ body {
   width: 260px;
 }
 
-.filter {
-  margin-bottom: 35px;
+.filter-grid {
+  margin-bottom: 5px;
 }
 
 .filter-checkbox {
   position: relative;
   right: 5px;
+}
+
+.filter-grid label {
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.filter-features label {
+  line-height: 19px;
+  font-size: 16px;
 }
 
 .filter fieldset {
@@ -389,13 +411,20 @@ body {
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   position: relative;
   right: 1px;
 }
 
-.filter legend {
-  margin-bottom: 17px;
+.filter-grid legend {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+}
+
+.filter-features legend {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 30px;
   position: relative;
@@ -409,7 +438,7 @@ body {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding-left: 45px;
 }
 
@@ -430,6 +459,10 @@ body {
   border-radius: 3px;
   font-weight: bold;
   outline: none;
+  padding-top: 3px;
+  position: relative;
+  right: 1px;
+  margin-top: 28px;
 }
 
 .filter-button:hover {
@@ -458,6 +491,7 @@ body {
   border: 2px solid var(--basic-gray-prices);
   border-radius: 10%;
   opacity: 0.4;
+  bottom: px;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -489,7 +523,7 @@ body {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: -27px;
   width: 9px;
   height: 9px;
@@ -605,7 +639,7 @@ body {
 .catalog-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 60px;
+  margin-top: 59px;
   margin-bottom: 0;
   order: 0;
   list-style: none;
@@ -621,27 +655,26 @@ body {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 25px;
   position: relative;
-  left: 1px;
 }
 
 .catalog-item-current {
   width: 360px;
   height: 578px;
-  margin-bottom: 73px;
-  ox-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 74px;
+  vox-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
 .catalog-item-current .description {
   display: block;
-  width: 358px;
+  width: 361px;
   height: 231px;
   text-align: center;
   background-color: var(--basic-gray);
   position: absolute;
-  bottom: -178px;
+  bottom: -189px;
 }
 
 .catalog-item-second {
@@ -784,6 +817,7 @@ body {
   margin-top: 10px;
   width: 200px;
   height: 50px;
+  margin-right: 3px;
   color: var(--basic-white);
   background-color: var(--special);
   border: none;
@@ -1250,6 +1284,7 @@ body {
   margin: 0;
   list-style: none;
   width: 100%px;
+  margin-bottom: 49px;
 }
 
 .pagination-item {
@@ -1310,11 +1345,18 @@ body {
 .map-catalog {
   min-width: 1440px;
   height: 416px;
-  margin-top: 25px;
+  margin-top: 100px;
   position: relative;
   right: 70px;
   margin-left: 70px;
   margin-bottom: 25px;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.map-catalog iframe {
+  border: none;
 }
 
 .marker-catalog {
@@ -1326,7 +1368,7 @@ body {
 .footer-contacts-catalog {
   padding-top: 31px;
   position: relative;
-  bottom: 369px;
+  bottom: 561px;
   left: 140px;
   display: block;
   margin: 0;
@@ -1358,14 +1400,14 @@ body {
 .map {
   min-width: 1440px;
   height: 416px;
-  margin-top: 50px;
+  margin-top: 60px;
   position: relative;
   right: 70px;
 }
 
 .marker {
   position: relative;
-  bottom: 337px;
+  bottom: 333px;
   left: 822px;
 }
 
@@ -1380,7 +1422,7 @@ body {
 .footer-contacts {
   padding-top: 31px;
   position: relative;
-  bottom: 566px;
+  bottom: 562px;
   left: 140px;
   display: block;
   margin: 0;
