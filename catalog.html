@@ -20,7 +20,7 @@
   <li><a href="blank.html">Студия</a></li>
     <li><a href="blank.html">Клиенты</a></li>
     <li class="navigation-redline"><a href="catalog.html">Магазин</a>
-    <img src="img/nav-redline.svg"></li>
+    <img src="img/nav-redline.svg" alt="decoration-redline"></li>
     <li><a href="blank.html">Контакты</a></li>
   </ul>
   <div class="user-navigation">
@@ -34,19 +34,17 @@
 </div>
     </nav>
     </header>
+    <h1 class="visually-hidden">Каталог студии Нёрдс</h1>
         <main class="page-catalog">
   <section class="filters">
   <ul class="breadcrumbs">
-    <form method="get" action="https://echo.htmlacademy.ru">
+    <form class="filters" method="get" action="https://echo.htmlacademy.ru" target="_blank">
       <fieldset class="filter-item">
           <legend>Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="
-                  width: %;
-                  margin-left: %
-                "></div>
+                <div  class="bar"></div>
               </div>
               <div class="toggle toggle-min" tabindex="0"></div>
               <div class="toggle toggle-max" tabindex="0"></div>
@@ -113,9 +111,9 @@
               <label for="filter-basket">Корзина</label>
                 </li>
                   </ul>
-                    </form>
-                    </fieldset>
-        <button type="submit" class="filter-button">Показать</button>
+                        </fieldset>
+                          <button type="submit" class="filter-button">Показать</button>
+                        </form>
         </section>
         <section>
             <ul class="catalog-list">
@@ -225,12 +223,15 @@
    <ul class="social1">
  <li class="vk">
  <a class="social-button" href="#"><img src="img/Vk.svg" width="81" height="15" alt="Логотип вконтакте"></a>
+ <span class="visually-hidden">Вконтакте</span>
    </li>
 <li class="Facebook">
 <a class="social-button" href="#"><img src="img/Facebook.svg" width="12" height="22" alt="Логотин фэйсбук"></a>
+<span class="visually-hidden">Фейсбук</span>
 </li>
 <li class="Insta">
 <a class="social-button" href="#"><img src="img/Insta.svg" width="21" height="21" alt="Логотип инстаграм"></a>
+<span class="visually-hidden">Инстаграмм</span>
 </li>
 </ul>
 <div class="friends">

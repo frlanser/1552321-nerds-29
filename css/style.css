@@ -34,7 +34,7 @@ body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -967,8 +967,8 @@ body {
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  right: 40px;
   bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .skills img {
@@ -1108,10 +1108,11 @@ body {
   background-color: var(--basic-red);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
+  height: 36px;
   margin-top: 23px;
   outline: none;
   border: none;
+  padding-top: 14px;
 }
 
 .button-1:hover {
@@ -1134,8 +1135,9 @@ body {
   background-color: var(--basic-green);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
+  height: 36px;
   margin-top: 23px;
+  padding-top: 14px;
   outline: none;
   border: none;
 }
@@ -1160,8 +1162,9 @@ body {
   background-color: var(--basic-yellow);
   border-radius: 3px;
   width: 160px;
-  height: 50px;
+  height: 36px;
   margin-top: 31px;
+  padding-top: 14px;
   outline: none;
   border: none;
 }
@@ -1178,6 +1181,7 @@ body {
 
 .main-button {
   font: inherit;
+  display: block;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -1185,12 +1189,12 @@ body {
   background-color: var(--basic-red);
   border: none;
   width: 240px;
-  height: 50px;
+  height: 38px;
   border-radius: 3px;
   outline: none;
-  margin-top: 38px;
-  margin-bottom: 80px;
-  padding-top: 3px;
+  margin-top: 37px;
+  margin-bottom: 81px;
+  padding-top: 12px;
 }
 
 .main-button:hover {
@@ -1617,18 +1621,23 @@ body {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  position: relative;
+  right: 60px;
 }
 
 .modal-description {
   margin: 0;
+  margin-top: 34px;
   margin-bottom: 9px;
   font-size: 16px;
   line-height: 18px;
   weight: 700;
+  position: relative;
+  right: 60px;
 }
 
 .login-form input {
-  width: 358px;
+  width: 360px;
   height: 50px;
   padding: 0 14px;
 }
@@ -1646,6 +1655,8 @@ body {
   width: 259px;
   height: 50px;
   margin-top: 47px;
+  position: relative;
+  right: 47px;
 }
 
 .login-form input[type="submit"]:hover {
@@ -1659,9 +1670,9 @@ body {
   background-color: var(--basic-white);
   border: 2px solid var(--basic-gray);
   font-weight: 400;
-  margin-top: 28px;
+  margin-top: 60px;
   position: relative;
-  right: 80px;
+  right: 137px;
 }
 
 .login-form textarea[class="text"] {
@@ -1672,6 +1683,7 @@ body {
   font-weight: 400;
   margin-top: 28px;
   position: relative;
+  right: 57px;
 }
 
 .login-form input:hover {
