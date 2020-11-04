@@ -491,7 +491,6 @@ body {
   border: 2px solid var(--basic-gray-prices);
   border-radius: 10%;
   opacity: 0.4;
-  bottom: px;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -530,6 +529,11 @@ body {
   background-color: var(--basic-gray-prices);
   border-radius: 50%;
   opacity: 0.4;
+}
+
+.filter-input:focus + label::before {
+  outline: thin dotted;
+  outline: 2px auto -webkit-focus-ring-color;
 }
 
 /* Filter scale */
@@ -842,6 +846,7 @@ body {
   font-weight: normal;
   color: var(--basic-dark);
   padding-left: 35px;
+  outline: none;
 }
 
 .breadcrumbs {
